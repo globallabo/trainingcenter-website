@@ -1,0 +1,545 @@
+/*! css for 5starバイリンガル保育士養成センター */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400&display=swap&subset=japanese');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 100;
+  background-color: #f0f0f0;
+  color: #333333;
+}
+header,main,footer{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  margin: 40px 0;
+}
+
+#logobar {
+  padding: 40px 20px 10px 20px;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: white;
+}
+
+#slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#slogan p {
+  margin: 0;
+  padding: 0;
+}
+#slogan p.jp {
+  font-size: 14px;
+  font-weight: 100;
+}
+#slogan p.en {
+  font-size: 8.75px;
+  font-weight: 100;
+}
+#slogan .button {
+  margin-bottom: 10px;
+}
+
+.banner::after, #reasons-image::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #f0f0f0 90%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+main section {
+  padding: 0 40px;
+}
+
+h1,h2,h3,h4 {
+  text-align: center;
+  font-weight: 100;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+
+main h3, main h4 {
+  color: #ff5555;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.accent {
+  color: #ff5555;
+}
+
+#list-and-flip {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+ul#lesson-types {
+  list-style-position: inside;
+  list-style-image: url('../images/bullet.png');
+  min-width: 260px;
+}
+
+ul#lesson-types li {
+  margin: 1em 0;
+  color: #ff5555;
+  font-weight: 300;
+}
+#eiken-flip-aside {
+  padding-right: 40px;
+  max-width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#eiken-aside {
+  margin-bottom: 40px;
+}
+
+#flip-aside h1, #flip-aside h2, #flip-aside h3, #flip-aside p{
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+#flip-aside img {
+  float: left;
+}
+#flip-aside h1 {
+  font-size: 1em;
+}
+#flip-aside h2 {
+  font-size: 0.8em;
+}
+#flip-aside h3 {
+  font-size: 0.6em;
+  color: #333333;
+}
+#flip-aside p {
+  font-size: 0.6em;
+}
+
+ol {
+  /* min-height: 210px; */
+  margin: 40px 80px;
+  /* background-image: url(../images/right_angle.png);
+  background-repeat: no-repeat; */
+  list-style-type: none;
+  /*counter-reset: circle-counter;*/
+}
+ol li {
+  margin: 20px 0;
+  padding: 10px;
+  /*  counter-increment: circle-counter;*/
+  position: relative;
+}
+
+ol li img {
+  vertical-align: middle;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+/* Tried to use CSS only for circular OL markers
+ol li::before {
+  content: counter(circle-counter);
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 400;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  top: 0;
+  left: -30px;
+}
+*/
+
+#reasons {
+  margin: 80px 0;
+}
+#reasons-text-and-image {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+#reasons-text {
+  margin: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#reasons-text p {
+  margin: 0 20px 10px 0;
+  font-size: 0.9em;
+}
+#reasons-text .divider {
+  align-self: flex-end;
+}
+#reasons-image {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#company-info {
+  margin: 100px 40px;
+  padding: 20px 40px 40px 40px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#company-info img {
+  margin: 0 20px;
+  float: right;
+}
+#company-info h3 {
+  text-align: left;
+  font-size: 1.4em;
+}
+
+#onsite-online {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+#onsite,#online {
+  flex-basis: 45%;
+}
+#onsite-online img {
+  border-radius: 10px;
+}
+#onsite-online h3 {
+  font-size: 1.2em;
+  margin: 5px;
+}
+#onsite-online ul {
+  list-style-position: outside;
+  text-align: left;
+  border: 1px solid #ff5555;
+  border-radius: 10px;
+  margin: 10px 20px;
+  padding: 10px 30px;
+}
+
+
+#flip-content {
+  /* to make the background color full-page
+  margin: 0 -50%;
+  padding: 40px 50%;
+  */
+  background-color: #fff6f8
+}
+#flip-content p {
+  font-size: 0.8em;
+}
+#flip-content h2 {
+  margin: 0.2em 0;
+}
+#flip-content > div {
+  max-width: 900px;
+  padding: 50px 20px;
+}
+#flip-content-header {
+  margin: 40px 10px 10px 20px;
+}
+#flip-content-header img {
+  float: left;
+  margin-right: 40px;
+}
+#flip-content-header h1, #flip-content-header h2, #flip-content-header h3, #flip-content-header p{
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+#flip-content-header img {
+  float: left;
+}
+#flip-content-header h1 {
+  font-size: 1.2em;
+}
+#flip-content-header h2 {
+  font-size: 1em;
+}
+#flip-content-header h3 {
+  font-size: 0.8em;
+}
+#flip-content-header p {
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+
+#flip-content-parts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#flip-content-parts > div {
+  flex-basis: 40%;
+}
+#flip-content-parts img {
+  align-self: center;
+}
+#flip-content-parts h4 {
+  text-align: left;
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+#knowhow,#evaluation {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#knowhow > div, #knowhow > img {
+  flex-basis: 45%;
+}
+#knowhow h2 {
+  text-align: left;
+}
+#evaluation > img {
+  flex-basis: 30%;
+}
+#evaluation > div {
+  flex-basis: 60%;
+}
+#evaluation > div {
+  text-align: right;
+}
+#evaluation h2 {
+  text-align: right;
+}
+
+
+#various-training img {
+  margin: 20px;
+}
+#various-training h2, #various-training h3 {
+  text-align: left;
+}
+#various-training h3 {
+  margin: 0.2em 0;
+}
+#various-training p {
+  font-size: 0.8em;
+}
+.price_chart {
+  text-align: center;
+}
+#various-training .footnote {
+  text-align: right;
+}
+#various-training .campaign {
+  text-align: center;
+}
+#various-training .campaign img {
+  border: 3px white solid;
+}
+
+#maps-and-phone {
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#maps-and-phone img {
+  margin: 5px;
+}
+#maps {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.map {
+
+}
+.map h3 {
+  margin: 0.5em 0;
+}
+.map address {
+  font-size: 0.7em;
+  font-style: normal;
+  padding: 0;
+  line-height: 1.2;
+}
+.map .open-date {
+  color: #ff5555;
+  font-size: 1.2em;
+}
+.mapimg {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #ff5555;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 200px;
+  width: 200px;
+}
+
+#phone {
+  text-align: center;
+  margin: 20px 0;
+}
+#phone p {
+  font-size: 1.5em;
+}
+.phone{
+  margin: -10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.phone .phone-number {
+  font-size: 3em;
+  font-weight: 400;
+  color: #ff5555;
+}
+#phone .description {
+  font-size: 0.7em;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 0;
+  color: #ff5555;
+}
+#contact .subtitle {
+  text-align: center;
+  font-size: 0.8em;
+}
+#contact {
+  text-align: center
+}
+#contact a {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 1px #333333 dashed;
+}
+.contact-form {
+  margin-top: 2em;
+}
+.contact-form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-form div fieldset {
+  text-align: left;
+  border: 0;
+}
+fieldset.options, fieldset.details {
+  flex-grow: 1;
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+fieldset.options legend {
+  font-size: 1.4rem;
+}
+fieldset.options .note {
+  font-size: 0.8rem;
+}
+fieldset.options p {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+.contact-form div fieldset.message {
+  flex-grow: 1;
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contact-form input, .contact-form textarea {
+  border: 1px solid #ff5555;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 17px;
+}
+.contact-form input[type=text], .contact-form textarea {
+  width: 100%;
+}
+.contact-form input[type="submit"] {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+}
+
+#smartmanage {
+  text-align: center;
+}
+#smartmanage h2 {
+  text-align: center;
+  color: #ff5555;
+  font-size: 0.9em;
+}
+
+footer {
+  margin: 50px auto;
+  text-align: center;
+}
+footer .jp {
+  font-size: 1em;
+}
+footer .en {
+  font-size: 0.8em;
+}
+footer .addresses {
+  margin: 20px auto;
+}
+footer address {
+  font-size: 0.6em;
+}
