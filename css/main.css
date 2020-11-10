@@ -546,6 +546,11 @@ fieldset.options p {
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
 }
+
+/* This is a honeypot field to filter out bots using the form */
+.contact-form #website {
+  display: none;
+}
 .contact-form div fieldset.message {
   flex-grow: 1;
   flex-basis: 45%;
@@ -576,6 +581,25 @@ fieldset.options p {
   text-align: center;
   color: #ff5555;
   font-size: 0.9em;
+}
+
+#form-submitted {
+  text-align: center;
+}
+#form-submitted h1 {
+  color: #ff5555;
+}
+#form-submitted p {
+  margin: 2rem;
+}
+.button-back {
+  background-color: gray;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
 }
 
 footer {

@@ -319,6 +319,8 @@
               <input type="text" name="name-kana" id="name-kana" required>
               <label for="email">メールアドレス <span class="accent">*</span></label>
               <input type="text" name="email" id="email" required>
+              <!-- This should be hidden by CSS, since it's just for bots -->
+              <input type="text" id="website" name="website" autocomplete="off">
               <label for="message">お問い合わせ・その他</label>
               <textarea name="message" id="message" rows="5" cols="40"></textarea>
             </fieldset>
@@ -338,7 +340,7 @@
 
     <footer>
       <!-- linove logo and slogan -->
-      <img src="images/linove.png" alt="Linove" width="94" height="23" />
+      <a href="https://www.5star-english.jp/"><img src="images/linove.png" alt="Linove" width="94" height="23" /></a>
       <p class="jp">人を育て、未来を育てる</p>
       <p class="en">Advancing People, Advancing the Future</p>
       <!-- addresses -->
